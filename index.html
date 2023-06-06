@@ -10,10 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" >
+
 </head>
 
-<body style="background-color:hsl(0, 20%, 1%);">
-
+<body style="background-image: linear-gradient(rgb(5, 15, 20),rgba(11, 16, 22, 0.916), rgb(1, 4, 12))">
+  <button onclick="topFunction()" id="myBtn" title="Scroll to top">⬆</button> 
   <header class="primary-header"  >
     <div class="container">
       <div class="nav-wrapper">
@@ -25,7 +26,7 @@
         </button> 
         <nav class="primary-navigation" id="primary-navigation">
           <ul aria-label="primary" role="list" class="nav-list">
-            <li><a href="about_us.html">About</a></li>
+            <li><a href="about_us.html">About Us</a></li>
             <li><a href='portfolio.html'>Portfolio</a></li>
             <li><a href='contact-us.html'>Contact Us</a></li>
           </ul>
@@ -81,53 +82,58 @@
       <span class="dot"></span> 
     </div>
   
-
+    <div class="container">
+      <div class="center">
+        <a class="filter-white" href="#"><img src="images/AKP-logo.svg" alt="Manage" height="250px"></a>
+      </div>
+    </div>
     <section class="padding-block-700">
       <div class="container">
-            <h2 class="fs-secondary-heading fw-bold text-neutral-150">New Zealand Photographer who reaches above and beyond to capture the best moments of yours</h2>
-            <p class="about-para-text text-neutral-150">That wonderful day you have dreamed since your childhood, and when it becomes true, your special day with your loved ones, celebration is precious and needed to remember when you share the journey. When you think of your that special day, we can give you a big assurance by capturing your hapiness and precious moments, naturally it will become a blessing to your new lives together, and for the loved ones</p>
+            <p class="about-para-text text-neutral-150">New Zealand Photographer who reaches above and beyond to capture the best moments of yours</p>
+            <p class="about-para-text text-neutral-150">That wonderful day you have dreamed of since your childhood, and when it becomes true, it becomes your special day with your loved ones. Celebration is precious and needed to remember as you share the journey. When you think of that special day, we can give you a big assurance by capturing your happiness and precious moments. Naturally, it will become a blessing to your new lives together and to your loved ones.</p>
           </div>
     </section>
-
-
-
-
+    <section class="padding-block-700">
+    </section>
+   
+ 
     
     <div class="row">
       <div class="column">
         <div class="contain">
-        <img src="images/sample1.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="imagetext">WEDDING of SHANIKA & SITHIKA</div>
-      </div>     
-        </div>
+        <img id="myImg"  src="images/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
+        <div class="imagetext">WEDDING DAY | SHANIKA & SITHIKA</div>
+          <!-- <div class="over">
+            <div class="imagetext">WEDDING of SHANIKA & SITHIKA</div>
+        </div>      -->
+           </div>
+    </div>
+      <div class="column">
+        <div class="contain">
+        <img  id="myImg" src="images/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
+         <div class="imagetext">VERY FIRST STUDIO SESSION</div>
+       </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/sample2.jpeg" alt="Forest" style="width:100%">
-        <div class="over">
-          <div class="imagetext">VERY FIRST STUDIO SESSION</div>
-        </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="contain">
-        <img src="images/sample3.jpeg" alt="Mountains" style="width:100%">
-        <div class="over">
-          <div class="imagetext">WEDDING of SHERINE & PAMITHA</div>
-        </div>
-        </div>
+        <img id="myImg" src="images/sample3.jpeg"  alt="WEDDING of SHERINE & PAMITHA" style="width:100%;cursor:pointer" onclick="onClick(this)">
+        <div class="imagetext">WEDDING DAY | SHERINE & PRAMITHA</div>
+         </div>
       </div>
     </div>
 
-    <section class="cta | padding-block-700 bg-accent-501 text-neutral-100">
-      <div class="para">
-        <div class="even-columns vertical-align-center">
-          <div>
-            <p class="fs-primary-heading fw-bold"></p>
-          </div>
-        </div>
+
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img id="img01" style="width:100%">
+ 
       </div>
+    </div>
+
+
+
+    <section class="cta | padding-block-700 bg-accent-501 text-neutral-100">
     </section>
 
   </main>
@@ -143,27 +149,27 @@
           </a> -->
 
           <ul class="social-list" role="list" aria-label="Social links">
-            <li><a aria-label="facebook" href="#">
+            <li><a aria-label="facebook" href="https://www.facebook.com/aucklandphotographynz">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-facebook"></use>
                 </svg></a>
             </li>
-            <li><a aria-label="youtube" href="#">
+            <li><a aria-label="youtube" href="https://www.youtube.com/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-youtube"></use>
                 </svg></a>
             </li>
-            <li><a aria-label="twitter" href="#">
+            <li><a aria-label="twitter" href="https://twitter.com/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-twitter"></use>
                 </svg></a>              
             </li>
-            <li><a aria-label="pinterest" href="#">
+            <li><a aria-label="pinterest" href="https://www.pinterest.nz/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
                 </svg></a>             
             </li>
-            <li><a aria-label="instagram" href="#">
+            <li><a aria-label="instagram" href="https://www.instagram.com/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-instagram"></use>
                 </svg>
@@ -176,13 +182,13 @@
             <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
               <li><a href="index.html">Home</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="about_us.html">About</a></li>
+              <li><a href="about_us.html">About Us</a></li>
               <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
           </nav>
         </div>
         <div class="primary-footer-form">
-          <p>Copyright 2023. No rights reserved.</p>
+          <p>Prototype of proposed website</p>
         </div>
       </div>
     </div>
@@ -190,9 +196,38 @@
 
 
   <script type="module" src="/main.js"></script>
-  <script type="text/javascript">
+ 
+  <script>
+  
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  
+  }
+    </script>
+  
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  } 
 
-  </script>
+</script>
 
 </body>
 </html>
