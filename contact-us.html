@@ -13,8 +13,8 @@
 </head>
 
 <body style="background-color:hsl(0, 20%, 1%);">
-
-  <header class="primary-header">
+  <button onclick="topFunction()" id="myBtn" title="Scroll to top">⬆</button>    
+  <header class="primary-header ">
     <div class="container">
       <div class="nav-wrapper">
         <a href="index.html"><img src="images/AKP-logo.svg" alt="Manage" height="250px"></a>
@@ -23,10 +23,12 @@
           <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
           <span class="visually-hidden">Menu</span>
         </button> 
+
+      
         <nav class="primary-navigation" id="primary-navigation">
           <ul aria-label="primary" role="list" class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">About</a></li>
+            <li><a href="about_us.html">About Us</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
           </ul>
         </nav>
@@ -34,17 +36,42 @@
     </div>
   </header>
 
-  <div class="container">
-    <form onsubmit="sendEmail(); reset(); return false;">
-      <p class="about-para-text">A botique studio specialising in Wedding Photography</p>
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Email Address" required>
-        <input type="text" id="phone" placeholder="Phone Number" required>
-        <textarea name="message" rows="4" placeholder="Please leave a message."></textarea>
-        <button type="submit">Send</button>
-      </form> 
-    </div>    
+  <main>
+    <div class="about-container">
 
+      <!-- Full-width images with number and caption text -->
+        <div class="about-text">
+        <img src="images/contactus.jpeg" style="width:100%">
+      </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="center">
+        <a class="filter-white" href="#"><img src="images/AKP-logo.svg" alt="Manage" height="250px"></a>
+      </div>
+    </div>
+        </div>
+      </div>
+
+    <div class="container">
+      <form action="https://formsubmit.co/aucklandphotographynz@gmail.com" method="POST">
+        <p class="about-para-text fw-bold">Contact Us | Get Packages</p>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="number" id="phone" placeholder="Phone Number" required>
+        <textarea name="message" rows="4" placeholder="Please mention service you required. If urgent please call +64 21 296 4864"></textarea>
+        <p class="about-para-text">If known, please advise the date service required</p>
+        <input type="date" name="preferred_date" placeholder="Email Address"  >
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5173/thank-you.html">
+        <button type="submit">Send</button>
+
+        </p>
+      </form>
+    </div>
+ 
 
 <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
     <div class="container">
@@ -57,27 +84,27 @@
           </a> -->
 
           <ul class="social-list" role="list" aria-label="Social links">
-            <li><a aria-label="facebook" href="#">
+            <li><a aria-label="facebook" href="https://www.facebook.com/aucklandphotographynz">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-facebook"></use>
                 </svg></a>
             </li>
-            <li><a aria-label="youtube" href="#">
+            <li><a aria-label="youtube" href="https://www.youtube.com/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-youtube"></use>
                 </svg></a>
             </li>
-            <li><a aria-label="twitter" href="#">
+            <li><a aria-label="twitter" href="https://twitter.com/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-twitter"></use>
                 </svg></a>              
             </li>
-            <li><a aria-label="pinterest" href="#">
+            <li><a aria-label="pinterest" href="https://www.pinterest.nz/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
                 </svg></a>             
             </li>
-            <li><a aria-label="instagram" href="#">
+            <li><a aria-label="instagram" href="https://www.instagram.com/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-instagram"></use>
                 </svg>
@@ -90,37 +117,43 @@
             <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
               <li><a href="index.html">Home</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="about_us.html">About</a></li>
-              <li><a href="contact-us.html">Contact</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
           </nav>
         </div>
         <div class="primary-footer-form">
-          <p>Copyright 2023. No rights reserved.</p>
+          <p>Prototype of proposed website</p>
         </div>
       </div>
     </div>
   </footer>
 
-
   <script type="module" src="/main.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script> 
+
   <script>
-    function sendEmail(){
-      Email.send({
-          SecureToken : "307E40DC85A9D4F98F1A210B4FC3D2069FEA",
-          To : 'chameeraashanth@gmail.com',
-          From : document.getElementById("email").value,
-          Subject : "Customer enquiry Auckland Photography",
-          Body : "Name: " + document.getElementById("name").value
-                + "<br> Email: " + document.getElementById("email").value
-                + "<br> Phone number: " + document.getElementById("phone").value
-                + "<br> Message: " + document.getElementById("message").value
-      }).then(
-        message => alert("Message sent successfully !")
-      );
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
     }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    } 
+  
   </script>
+  
 </body>
 </html>
 
