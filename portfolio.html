@@ -14,7 +14,7 @@
 </head>
 
 <body style="background-color:hsl(0, 20%, 1%);">
-               
+  <button onclick="topFunction()" id="myBtn" title="Scroll to top">⬆</button>          
   <header class="primary-header">
     <div class="container">
       <div class="nav-wrapper">
@@ -27,7 +27,7 @@
         <nav class="primary-navigation" id="primary-navigation">
           <ul aria-label="primary" role="list" class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">About</a></li>
+            <li><a href="about_us.html">About Us</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
           </ul>
         </nav>
@@ -39,65 +39,67 @@
   <div class="row">
     <div class="column">
       <div class="contain">
-      <img src="images/Sherine&Pramitha/sample4.jpeg"  alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | SHERINE & PRAMITHA</div>
-    </div>     
+      <img id="myImg" src="images/portfolio/Sherine&Pramitha/sample4.jpeg"  alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
+      <div class="imagetext">WEDDING DAY | SHERINE & PRAMITHA</div>   
       </div>
     </div>
     <div class="column">
       <div class="contain">    
-          <img src="images/Sherine&Pramitha/sample10.jpeg"  alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | SHERINE & PRAMITHA</div>
-      </div>
+          <img id="myImg" src="images/portfolio/Sherine&Pramitha/sample10.jpeg"  alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
+          <div class="imagetext">WEDDING DAY | SHERINE & PRAMITHA</div>
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Sherine&Pramitha/sample3.jpeg"  alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | SHERINE & PRAMITHA</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Sherine&Pramitha/sample3.jpeg"  alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
+      <div class="imagetext">WEDDING DAY | SHERINE & PRAMITHA</div>
       </div>
     </div>
   </div>
+   
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img id="img01" style="width:100%">
+       </div>
+    </div>
+
 
 <!-- first animation block -->
   <div class="row">
     <div class="column">
       <div class="contain">
         <div class="w3-content w3-section">
-      <img class="mySlides w3-animate-fading" src="images/Sherine&Pramitha/tsample1.jpeg" alt="Snow" style="width:100%">
-      <img class="mySlides w3-animate-fading" src="images/Sherine&Pramitha/tsample2.jpeg" alt="Mountains" style="width:100%">
-      <img class="mySlides w3-animate-fading" src="images/Sherine&Pramitha/tsample3.jpeg" alt="Mountains" style="width:100%">
-      <div class="over">
+      <img class="mySlides w3-animate-fading" src="images/portfolio/Sherine&Pramitha/tsample1.jpeg" alt="Snow" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/portfolio/Sherine&Pramitha/tsample2.jpeg" alt="Mountains" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/portfolio/Sherine&Pramitha/tsample3.jpeg" alt="Mountains" style="width:100%">
+      <!-- <div class="over">
         <div class="portfolio-text">WEDDING DAY | SHERINE & PRAMITHA</div>
-    </div>
+    </div> -->
   </div>
       </div>
     </div>
     <div class="column">
       <div class="contain">
         <div class="w3-content w3-section">
-      <img class="mySlides w3-animate-fading" src="images/Sherine&Pramitha/tsample4.jpeg" alt="Mountains" style="width:100%">
-      <img class="mySlides w3-animate-fading" src="images/Sherine&Pramitha/tsample5.jpeg"  alt="Mountains" style="width:100%">
-      <img class="mySlides w3-animate-fading" src="images/Sherine&Pramitha/tsample6.jpeg" alt="Mountains" style="width:100%">
-      <div class="over">
+      <img class="mySlides w3-animate-fading" src="images/portfolio/Sherine&Pramitha/tsample4.jpeg" alt="Mountains" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/portfolio/Sherine&Pramitha/tsample5.jpeg"  alt="Mountains" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/portfolio/Sherine&Pramitha/tsample6.jpeg" alt="Mountains" style="width:100%">
+      <!-- <div class="over">
       <div class="portfolio-text">FAMILY PHOTOS OF SETI'S FAMILY</div>
-      </div>
+      </div> -->
     </div>
         </div>
       </div>
     <div class="column">
       <div class="contain">
         <div class="w3-content w3-section">
-          <img class="mySlides w3-animate-fading" src="images/Sherine&Pramitha/tsample7.jpeg" alt="Mountains" style="width:100%">
-          <img class="mySlides w3-animate-fading" src="images/Sherine&Pramitha/tsample8.jpeg"  alt="Mountains" style="width:100%">
-          <img class="mySlides w3-animate-fading" src="images/Sherine&Pramitha/tsample9.jpeg" alt="Mountains" style="width:100%">
-          <div class="over">
+          <img class="mySlides w3-animate-fading" src="images/portfolio/Sherine&Pramitha/tsample7.jpeg" alt="Mountains" style="width:100%">
+          <img class="mySlides w3-animate-fading" src="images/portfolio/Sherine&Pramitha/tsample8.jpeg"  alt="Mountains" style="width:100%">
+          <img class="mySlides w3-animate-fading" src="images/portfolio/Sherine&Pramitha/tsample9.jpeg" alt="Mountains" style="width:100%">
+          <!-- <div class="over">
           <div class="portfolio-text">FAMILY PHOTOS OF SETI'S FAMILY</div>
-      </div>
+      </div> -->
     </div>
         </div>
       </div>
@@ -109,9 +111,9 @@
       <div class="column">
         <div class="contain">
           <div class="w3-content w3-section">
-        <img class="mySlides w3-animate-fading" src="images/Shanika&Sathika/tsample1.jpeg" alt="Snow" style="width:100%">
-        <img class="mySlides w3-animate-fading" src="images/Shanika&Sathika/tsample2.jpeg" alt="Mountains" style="width:100%">
-        <img class="mySlides w3-animate-fading" src="images/Shanika&Sathika/tsample3.jpeg" alt="Mountains" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="images/portfolio/Shanika&Sathika/tsample1.jpeg" alt="Snow" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="images/portfolio/Shanika&Sathika/tsample2.jpeg" alt="Mountains" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="images/portfolio/Shanika&Sathika/tsample3.jpeg" alt="Mountains" style="width:100%">
         <!-- <div class="over">
           <div class="portfolio-text">WEDDING DAY | SHANIKA & SITHIKA</div>
       </div> -->
@@ -121,9 +123,9 @@
       <div class="column">
         <div class="contain">
           <div class="w3-content w3-section">
-          <img class="mySlides w3-animate-fading" src="images/Sandaru/sample1.jpeg" alt="Snow" style="width:100%">
-          <img class="mySlides w3-animate-fading" src="images/Sandaru/sample2.jpeg" alt="Mountains" style="width:100%">
-          <img class="mySlides w3-animate-fading" src="images/Sandaru/sample3.jpeg" alt="Mountains" style="width:100%">
+          <img class="mySlides w3-animate-fading" src="images/portfolio/Sandaru/sample1.jpeg" alt="Snow" style="width:100%">
+          <img class="mySlides w3-animate-fading" src="images/portfolio/Sandaru/sample2.jpeg" alt="Mountains" style="width:100%">
+          <img class="mySlides w3-animate-fading" src="images/portfolio/Sandaru/sample3.jpeg" alt="Mountains" style="width:100%">
           <!-- <div class="over">
             <div class="portfolio-text">PRESHOOT OF SANDARU & BADDRAKA</div>
         </div> -->
@@ -133,9 +135,9 @@
       <div class="column">
         <div class="contain">
           <div class="w3-content w3-section">
-        <img class="mySlides w3-animate-fading"  src="images/Anjali&Hemant/sample1.jpeg" alt="Mountains" style="width:100%">
-        <img class="mySlides w3-animate-fading" src="images/Anjali&Hemant/sample2.jpeg" alt="Mountains" style="width:100%">
-        <img class="mySlides w3-animate-fading" src="images/Anjali&Hemant/sample3.jpeg" alt="Mountains" style="width:100%">
+        <img class="mySlides w3-animate-fading"  src="images/portfolio/Anjali&Hemant/sample1.jpeg" alt="Mountains" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="images/portfolio/Anjali&Hemant/sample2.jpeg" alt="Mountains" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="images/portfolio/Anjali&Hemant/sample3.jpeg" alt="Mountains" style="width:100%">
         <!-- <div class="over">
           <div class="portfolio-text"> ENGAGEMENT DAY | ANJALI & HEMANT |</div>
         </div> -->
@@ -153,37 +155,28 @@
             <p class="fs-primary-heading fw-bold">Capture your precious moments with us</p>
           </div>
           <div class="justify-self-end-md">
-            <button class="button" data-type="inverted">Get started</button>
+            <a  href="contact-us.html"><button class="button"  data-type="inverted">Get started</button></a>
           </div>
         </div>
       </div>
     </section>
-
-    
+ 
     <!-- Start of gallery -->
     <div class="row">
       <div class="column">
         <div class="contain">
-        <img src="images/Seti_family/sample1.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">FAMILY PHOTOS OF SETI'S FAMILY</div>
-      </div>     
+        <img id="myImg" src="images/portfolio/Seti_family/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
         </div>
       </div>
       <div class="column">
         <div class="contain">    
-            <img src="images/Seti_family/sample2.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">FAMILY PHOTOS OF SETI'S FAMILY</div>
-        </div>
+            <img src="images/portfolio/Seti_family/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+            <div class="imagetext">FAMILY PHOTOS OF SETI'S FAMILY</div>
         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Seti_family/sample3.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">FAMILY PHOTOS OF SETI'S FAMILY</div>
-        </div>
+        <img id="myImg" src="images/portfolio/Seti_family/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
         </div>
       </div>
     </div>
@@ -193,26 +186,18 @@
   <div class="row">
     <div class="column">
       <div class="contain">
-      <img src="images/Flora's_first/sample1.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">FLORA'S FIRST BIRTHDAY</div>
-    </div>     
-      </div>
+      <img id="myImg" src="images/portfolio/Flora's_first/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
     </div>
+  </div>
     <div class="column">
       <div class="contain">    
-          <img src="images/Flora's_first/sample2.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">FLORA'S FIRST BIRTHDAY</div>
-      </div>
+          <img src="images/portfolio/Flora's_first/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+          <div class="imagetext">FLORA'S FIRST BIRTHDAY</div>
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Flora's_first/sample3.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">FLORA'S FIRST BIRTHDAY</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Flora's_first/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
       </div>
     </div>
   </div>
@@ -220,26 +205,18 @@
     <div class="row">
       <div class="column">
         <div class="contain">
-        <img src="images/Miya's_fifth/sample1.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">MIYA'S FIFTH BIRTHDAY</div>
-      </div>     
+        <img id="myImg" src="images/portfolio/Miya's_fifth/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
         </div>
       </div>
       <div class="column">
         <div class="contain">    
-            <img src="images/Miya's_fifth/sample2.jpeg"  alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">MIYA'S FIFTH BIRTHDAY</div>
-        </div>
+            <img id="myImg" src="images/portfolio/Miya's_fifth/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+            <div class="imagetext">MIYA'S FIFTH BIRTHDAY</div>
         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Miya's_fifth/sample2.jpeg"  alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">MIYA'S FIFTH BIRTHDAY</div>
-        </div>
+        <img id="myImg" src="images/portfolio/Miya's_fifth/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
         </div>
       </div>
     </div>
@@ -247,26 +224,18 @@
     <div class="row">
       <div class="column">
         <div class="contain">
-        <img src="images/Hiruka's_first/sample1.jpeg"  alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">HIRUKA'S FIRST BIRTHDAY</div>
-      </div>     
+        <img id="myImg" src="images/portfolio/Hiruka's_first/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
         </div>
       </div>
       <div class="column">
         <div class="contain">    
-            <img  src="images/Hiruka's_first/sample2.jpeg"  alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">HIRUKA'S FIRST BIRTHDAY</div>
-        </div>
+            <img  id="myImg" src="images/portfolio/Hiruka's_first/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+            <div class="imagetext">HIRUKA'S FIRST BIRTHDAY</div>
         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Hiruka's_first/sample3.jpeg"  alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">HIRUKA'S FIRST BIRTHDAY</div>
-        </div>
+        <img  id="myImg" src="images/portfolio/Hiruka's_first/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
         </div>
       </div>
     </div>
@@ -275,26 +244,18 @@
     <div class="row">
       <div class="column">
         <div class="contain">
-        <img src="images/Dimaya_first/sample1.jpeg"  alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">DIMAYA'S FIRST BIRTHDAY</div>
-      </div>     
+        <img id="myImg" src="images/portfolio/Dimaya_first/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
         </div>
       </div>
       <div class="column">
         <div class="contain">    
-            <img  src="images/Dimaya_first/sample2.jpeg"  alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">DIMAYA'S FIRST BIRTHDAY</div>
-        </div>
+            <img id="myImg" src="images/portfolio/Dimaya_first/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+            <div class="imagetext">DIMAYA'S FIRST BIRTHDAY</div>
         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Dimaya_first/sample3.jpeg"   alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">DIMAYA'S FIRST BIRTHDAY</div>
-        </div>
+        <img id="myImg" src="images/portfolio/Dimaya_first/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
         </div>
       </div>
     </div>
@@ -303,53 +264,36 @@
   <div class="row">
     <div class="column">
       <div class="contain">
-      <img src="images/Iras's_first/sample2.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">IRAS'S FIRST BIRTHDAY</div>
-    </div>     
+      <img id="myImg" src="images/portfolio/Iras's_first/sample2.jpeg"  alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Iras's_first/sample3.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">IRAS'S FIRST BIRTHDAY</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Iras's_first/sample3.jpeg"  alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+      <div class="imagetext">IRAS'S FIRST BIRTHDAY</div>
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Iras's_first/sample4.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">IRAS'S FIRST BIRTHDAY</div>
-      </div>
-      </div>
+      <img id="myImg" src="images/portfolio/Iras's_first/sample4.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
     </div>
   </div>
   
   <div class="row">
     <div class="column">
       <div class="contain">
-      <img src="images/Kiera's_first/sample1.jpeg"  alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">KIERA'S FIRST BIRTHDAY</div>
-    </div>     
+      <img id="myImg" src="images/portfolio/Kiera's_first/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Kiera's_first/sample2.jpeg"  alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">KIERA'S FIRST BIRTHDAY</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Kiera's_first/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+      <div class="imagetext">KIERA'S FIRST BIRTHDAY</div>
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Kiera's_first/sample3.jpeg"  alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">KIERA'S FIRST BIRTHDAY</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Kiera's_first/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
       </div>
     </div>
   </div>
@@ -359,26 +303,18 @@
   <div class="row">
     <div class="column">
       <div class="contain">
-      <img src="images/Thuleena's_birthday/sample1.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">THULEENA'S SECOND BIRTHDAY</div>
-    </div>     
+      <img id="myImg" src="images/portfolio/Thuleena's_birthday/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+        </div>
+    </div>
+    <div class="column">
+      <div class="contain">
+      <img id="myImg" src="images/portfolio/Thuleena's_birthday/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+      <div class="imagetext">WEDDING DAY | KARELENA & HALEX</div>
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Thuleena's_birthday/sample2.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">THULEENA'S SECOND BIRTHDAY</div>
-      </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="contain">
-      <img src="images/Thuleena's_birthday/sample3.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">THULEENA'S SECOND BIRTHDAY</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Thuleena's_birthday/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
       </div>
     </div>
   </div>       
@@ -388,26 +324,18 @@
   <div class="row">
     <div class="column">
       <div class="contain">
-      <img src="images/Kerelena&Halex/sample1.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | KARELENA & HALEX</div>
-    </div>     
+      <img id="myImg" src="images/portfolio/Kerelena&Halex/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Kerelena&Halex/sample2.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | KARELENA & HALEX</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Kerelena&Halex/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
+      <div class="imagetext">WEDDING DAY | KARELENA & HALEX</div>
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Kerelena&Halex/sample3.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | KARELENA & HALEX</div>
-      </div>
+      <img src="images/portfolio/Kerelena&Halex/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)"> 
       </div>
     </div>
   </div>
@@ -415,26 +343,18 @@
   <div class="row">
     <div class="column">
       <div class="contain">
-      <img src="images/Shanika&Sathika/sample1.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | SHANIKA & SATHIKA</div>
-    </div>     
+      <img id="myImg" src="images/portfolio/Shanika&Sathika/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">  
+        </div>
+    </div>
+    <div class="column">
+      <div class="contain">
+      <img id="myImg" src="images/portfolio/Shanika&Sathika/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">  
+         <div class="imagetext">WEDDING DAY | SHANIKA & SATHIKA</div>
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Shanika&Sathika/sample2.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | SHANIKA & SATHIKA</div>
-      </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="contain">
-      <img src="images/Shanika&Sathika/sample3.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | SHANIKA & SATHIKA</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Shanika&Sathika/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">  
       </div>
     </div>
   </div>
@@ -443,26 +363,18 @@
   <div class="row">
     <div class="column">
       <div class="contain">
-      <img src="images/Mania&Rahul/sample1.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | MANIA AND RAHUL</div>
-    </div>     
+      <img id="myImg" src="images/portfolio/Mania&Rahul/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">     
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Mania&Rahul/sample2.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | MANIA AND RAHUL</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Mania&Rahul/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
+        <div class="imagetext">WEDDING DAY | MANIA AND RAHUL</div>
       </div>
     </div>
     <div class="column">
       <div class="contain">
-      <img src="images/Mania&Rahul/sample3.jpeg" alt="Snow" style="width:100%">
-      <div class="over">
-        <div class="portfolio-text">WEDDING DAY | MANIA AND RAHUL</div>
-      </div>
+      <img id="myImg" src="images/portfolio/Mania&Rahul/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
       </div>
     </div>
     
@@ -470,26 +382,18 @@
     <div class="row">
       <div class="column">
         <div class="contain">
-        <img src="images/Gender_reveal/sample1.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">GENDER REVEAL</div>
-      </div>     
+        <img id="myImg" src="images/portfolio/Gender_reveal/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Gender_reveal/sample2.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">GENDER REVEAL</div>
-        </div>
+        <img id="myImg" src="images/portfolio/Gender_reveal/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
+        <div class="imagetext">GENDER REVEAL</div>
         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Gender_reveal/sample3.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">GENDER REVEAL</div>
-        </div>
+        <img id="myImg" src="images/portfolio/Gender_reveal/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
         </div>
       </div>
     </div>
@@ -497,26 +401,18 @@
     <div class="row">
       <div class="column">
         <div class="contain">
-        <img src="images/Emmira/sample1.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">EMMIRA BABY'S PHOTOSHOOT</div>
-      </div>     
+        <img id="myImg" src="images/portfolio/Emmira/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Emmira/sample2.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">EMMIRA BABY'S PHOTOSHOOT</div>
-        </div>
+        <img id="myImg" src="images/portfolio/Emmira/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
+        <div class="imagetext">EMMIRA BABY'S PHOTOSHOOT</div>
         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Emmira/sample3.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">EMMIRA BABY'S PHOTOSHOOT</div>
-        </div>
+        <img id="myImg" src="images/portfolio/Emmira/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
         </div>
       </div>
     </div>
@@ -524,30 +420,28 @@
     <div class="row">
       <div class="column">
         <div class="contain">
-        <img src="images/Bunch/sample1.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">BUNCH PHOTOSHOOT</div>
-      </div>     
+        <img id="myImg" src="images/portfolio/Bunch/sample1.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">   
         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Bunch/sample2.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">BUNCH PHOTOSHOOT</div>
-        </div>
-        </div>
+        <img id="myImg" src="images/portfolio/Bunch/sample2.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
+           <div class="imagetext">BUNCH PHOTOSHOOT</div>
+         </div>
       </div>
       <div class="column">
         <div class="contain">
-        <img src="images/Bunch/sample3.jpeg" alt="Snow" style="width:100%">
-        <div class="over">
-          <div class="portfolio-text">BUNCH PHOTOSHOOT</div>
-        </div>
-        </div>
-      </div>
+        <img id="myImg" src="images/portfolio/Bunch/sample3.jpeg" alt="" style="width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
-
+  </div>
+</div>
+ 
+  <div id="modal01" class="modal" onclick="this.style.display='none'">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+      <img id="img01" style="width:100%">
+     </div>
+  </div>
 
 <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
     <div class="container">
@@ -560,27 +454,27 @@
           </a> -->
 
           <ul class="social-list" role="list" aria-label="Social links">
-            <li><a aria-label="facebook" href="#">
+            <li><a aria-label="facebook" href="https://www.facebook.com/aucklandphotographynz">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-facebook"></use>
                 </svg></a>
             </li>
-            <li><a aria-label="youtube" href="#">
+            <li><a aria-label="youtube" href="https://www.youtube.com/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-youtube"></use>
                 </svg></a>
             </li>
-            <li><a aria-label="twitter" href="#">
+            <li><a aria-label="twitter" href="https://twitter.com/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-twitter"></use>
                 </svg></a>              
             </li>
-            <li><a aria-label="pinterest" href="#">
+            <li><a aria-label="pinterest" href="https://www.pinterest.nz/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
                 </svg></a>             
             </li>
-            <li><a aria-label="instagram" href="#">
+            <li><a aria-label="instagram" href="https://www.instagram.com/">
                 <svg class="social-icon">
                   <use xlink:href="images/social-icons.svg#icon-instagram"></use>
                 </svg>
@@ -593,13 +487,13 @@
             <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
               <li><a href="index.html">Home</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="about_us.html">About</a></li>
+              <li><a href="about_us.html">About Us</a></li>
               <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
           </nav>
         </div>
         <div class="primary-footer-form">
-          <p>Copyright 2023. No rights reserved.</p>
+          <p>Prototype of proposed website</p>
         </div>
       </div>
     </div>
@@ -619,12 +513,45 @@ function carousel() {
     x[i].style.display = "none";  
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 24}    
+  if (myIndex > x.length) {myIndex = 0}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000);    
+  setTimeout(carousel, 8000);    
 }
  
-  </script>
+</script>
+  <script type="module" src="/main.js"></script>
+
+  <script>
+  
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  
+  }
+</script>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  } 
+
+</script>
 
 </body>
 </html>
