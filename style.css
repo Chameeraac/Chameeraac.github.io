@@ -914,7 +914,7 @@ form button{
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 80px;
+  bottom: 20px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
