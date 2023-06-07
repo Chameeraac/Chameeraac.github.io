@@ -225,7 +225,12 @@ p:not([class]) {
 }
 
 
-@media (max-width: 50em) {
+@media (max-width: 47em) {
+  .primary-header[data-overla]{
+    position: relative;
+    z-index: 999;
+ }
+ 
   .primary-navigation {
     display: none;
 
